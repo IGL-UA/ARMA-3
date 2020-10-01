@@ -7,11 +7,13 @@ params ["_guid", "_primary","_handgun","_secondary","_baza_danuh","_side"];
 _baza_danuh = [];
 
 {
+if (alive _x) then {
 _guid = getPlayerUID _x;
 _side = side _x;
 _pos = getpos _x;
 _loadout = getUnitLoadout _x;
 _baza_danuh append [[_guid,_side,_pos,_loadout]];
+};
 } foreach allPlayers;
 
 copyToClipboard str _baza_danuh;
