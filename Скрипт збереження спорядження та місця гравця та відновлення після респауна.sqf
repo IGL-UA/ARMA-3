@@ -29,4 +29,4 @@ if ((getPlayerUID player == _x #0) && (side player == _x #1)) exitWith {
 player setpos _x #2;
 player setunitloadout _x #3;
 };
-} forach _baza_danuh;
+} foreach _baza_danuh;
