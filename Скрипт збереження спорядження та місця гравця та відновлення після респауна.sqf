@@ -26,7 +26,7 @@ waitUntil {!isnull player};
 _baza_danuh = // -= сюди вставити базу даних що створена і є в буфері обміну на кінець гри (після виконання коду зверху) =- //
 //Приклад:
 //_baza_danuh = [["76561198054446177",WEST,[1786.95,5998.06,0.00143909],[["arifle_MX_Hamr_pointer_F","","acc_pointer_IR","optic_Hamr",["30Rnd_65x39_caseless_mag",30],[],""],[],["hgun_P07_F","","","",["16Rnd_9x21_Mag",17],[],""],["U_B_CombatUniform_mcam_vest",[["ACE_fieldDressing",1],["ACE_packingBandage",1],["ACE_morphine",1],["ACE_tourniquet",1],["30Rnd_65x39_caseless_mag",2,30]]],["V_PlateCarrierGL_rgr",[["30Rnd_65x39_caseless_mag",1,30],["30Rnd_65x39_caseless_mag_Tracer",2,30],["16Rnd_9x21_Mag",2,17],["HandGrenade",2,1],["B_IR_Grenade",2,1],["SmokeShell",1,1],["SmokeShellGreen",1,1],["SmokeShellBlue",1,1],["SmokeShellOrange",1,1],["Chemlight_green",2,1]]],["tf_rt1523g",[]],"H_HelmetB_desert","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","tf_anprc152_1","ItemCompass","tf_microdagr","NVGoggles"]]]];
-//
+//Не забути додати точку з комою в кінці !!!
 {
 if ((getPlayerUID player == _x #0) && (side player == _x #1)) exitWith {
 player setpos _x #2;
