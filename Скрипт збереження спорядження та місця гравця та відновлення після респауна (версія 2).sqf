@@ -1,7 +1,9 @@
 //===========================================================================//
 //               Створюємо базу даних і вносимо дані гравця                  //
 //              ---- ЗБЕРІГАЄМО в профіль кожного бійця ----                 //
+//      Потрібно виконати команду глобально -> [] spawn fn_savebaceTH;       //
 //===========================================================================//
+fn_savebaceTH = {
 params ["_guid", "_primary","_handgun","_secondary","_baza_danuh","_side"];
 
 _baza_danuh = [];
@@ -17,6 +19,7 @@ _baza_danuh append [[_guid,_side,_pos,_loadout,_currentTime]];
 
 profileNamespace setVariable ['baza_danuh', _baza_danuh]; 
 saveProfileNamespace;
+};
 
 //===========================================================================//
 //                  Для завантаження вставити в initPlayerLocal.sqf          //
