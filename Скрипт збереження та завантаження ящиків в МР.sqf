@@ -15,6 +15,8 @@ _boxes_bace = [];
 		{_loadout pushBack [_x, (_magazineCargo select 1) select _forEachIndex];} forEach (_magazineCargo select 0);
 		private _itemCargo = getItemCargo _x;
 		{_loadout pushBack [_x, (_itemCargo select 1) select _forEachIndex];} forEach (_itemCargo select 0);
+		private _BackpackCargo = getBackpackCargo _x;
+		{_loadout pushBack [_x, (_BackpackCargo select 1) select _forEachIndex];} forEach (_BackpackCargo select 0);
 		_boxes_bace append [[_typeof,_pos,_dir,_loadout,_damage]];
 	};
 } count allMissionObjects "All";
@@ -66,18 +68,3 @@ _baza_danuh_box = profileNamespace getVariable 'baza_danuh_box';
 	} foreach _loadoutbox;
 	
 } forEach _baza_danuh_box;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
