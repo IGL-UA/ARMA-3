@@ -1,0 +1,5 @@
+#include "RLO\GUI.hpp"
+
+class cfgFunctions {
+    #include "RLO\cfgFunctions.hpp"
+};
